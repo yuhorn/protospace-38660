@@ -8,7 +8,7 @@ class User < ApplicationRecord
   validates :profile, presence: true
   validates :occupation, presence: true
   validates :position, presence: true
-  validates :encrypted_password, lengh: {minimum: 6}
+  validates :encrypted_password, length: {minimum: 6}
 
   has_many :prototypes
   has_many :comments
